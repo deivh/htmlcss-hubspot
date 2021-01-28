@@ -79,6 +79,7 @@ main .eyecatch {
 /* REGOLE SECTION */
 
 section {
+  margin-top: 20px;
   /* DEBUG:  */
   height: 600px;
   background-color: #33ff99;
@@ -111,4 +112,33 @@ section .row .cell-second-row {
   width: 25%;
   background-color: #ff0080;
 
+}
+
+/* REGOLE SECONDA SECTION */
+.info-grid {
+  position: relative;
+}
+
+
+.info-grid .row {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  /* DEBUG:  */
+  height: 100%;
+}
+
+#container-info-grid {
+  width: 90%;
+  margin: auto;
+
+}
+
+.info-grid .row .cell-third-row {
+  float: left;
+  /* DEBUG:  */
+  width: 25%;
+  height: 200px;
+  background-color: #40bf40;
 }
