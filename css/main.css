@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
  /* REGOLE GENERALI */
 
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 15px;
 }
 
@@ -25,13 +25,13 @@ body {
 .cta {
   background-color: #ff7a59;
   border: 1px solid white;
-  border-radius: 2px;
 }
 
 
 button {
-  padding: 5px;
+  padding: 8px;
   color: white;
+  border-radius: 6px;
 }
 
 /* REGOLE HEADER */
@@ -55,21 +55,7 @@ header .hor-rul {
   height: 4%;
 }
 
-header .jumbotron {
-  padding: 20px;
-  background-image: url(../img/jumbotron.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  height: calc(90% - 150px);
 
-}
-
-header .separèe {
-  /* DEBUG:  */
-  height: 10%;
-  width: auto;
-  background-color: #00b38f;
-}
 
 header nav:first-child{
   background-color: #f2f2f2;
@@ -87,7 +73,9 @@ header nav div a {
   font-weight: bold;
   padding: 0 20px 0 20px;
 }
-
+header nav button {
+  margin: 0 10px;
+}
 header nav:first-child div a:first-child{
   border-right: 1px solid grey;
 }
@@ -101,6 +89,46 @@ button.login {
 header ul li {
   list-style-type: none;
   float: left;
+}
+
+/*  regole jumbotron */
+
+header .jumbotron {
+  padding: 20px;
+  background-image: url(../img/jumbotron.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: calc(90% - 150px);
+
+}
+
+header .separèe {
+  /* DEBUG:  */
+  height: 10%;
+  width: auto;
+  background-color: #00b38f;
+}
+
+header .jumbotron div {
+  margin: 5% 0 5% 5%;
+  max-width: 50%;
+  min-width: 30%;
+  padding: 30px 5%;
+  color: #1f3d7a;
+}
+
+header .jumbotron div h1 {
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+
+header .jumbotron div p {
+  padding:  20px 0;
+}
+header .jumbotron div button {
+  margin: 5px;
+  padding: 22px 30px;
+  border-radius: 5px;
 }
 /* REGOLE MAIN */
 
