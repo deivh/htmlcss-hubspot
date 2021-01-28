@@ -142,3 +142,47 @@ section .row .cell-second-row {
   height: 200px;
   background-color: #40bf40;
 }
+
+
+/* REGOLE TERZA ED ULTIMA SECTION */
+
+.row .cell-fourth-row {
+  float: left;
+  padding: 10px;
+  /* DEBUG:  */
+  width: 50%;
+  height: 70%;
+  background-color: #668cff;
+}
+
+.row .cell-fifth-row {
+  float: left;
+  padding: 10px;
+  /* DEBUG:  */
+  width: 50%;
+  height: 100%;
+  background-color: #e699ff;
+}
+
+/* REGOLE FOOTER */
+
+footer {
+  margin-top:30px;
+  padding: 2%;
+  /* DEBUG:  */
+  height: 350px;
+  background-color: #ccc;
+}
+
+footer .row {
+  height: 60%;
+}
+
+footer .row .contacts-cell {
+  float: left;
+  padding: 20px;
+  /* DEBUG:  */
+  height: calc(350px - 45%) ;
+  width: 25%;
+  background-color: #666699;
+}
