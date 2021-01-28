@@ -1,0 +1,41 @@
+
+
+ /* REGOLE GENERALI */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: ;
+  font-size: ;
+}
+
+/* REGOLE RICORRENTI DI PAGINA */
+
+/* CLEARFIX */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.cta {
+
+}
+
+
+/* REGOLE HEADER */
+
+
+
+
+
+
+
+/* REGOLE MAIN */
+
+
+/* REGOLE SECTION */
