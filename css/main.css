@@ -29,13 +29,86 @@ body {
 
 /* REGOLE HEADER */
 
+header {
+  /* DEBUG:  */
+  height: 550px;
+  background-color: #00e6e6;
+}
 
+header .menu{
+  /* DEBUG */
+  height: 150px;
+  background-color: #e6ffff;
+}
 
+nav {
+  /* DEBUG:  */
+  height: 48%;
+  width: auto;
+  background-color: #99ffff;
+}
 
+header .hor-rul {
+  height: 4%;
+}
 
+header .jumbotron {
+  padding: 20px;
+  /* DEBUG:  */
+  height: calc(90% - 150px);
+  background-color: #00ffff;
+}
 
+header .separèe {
+  /* DEBUG:  */
+  height: 10%;
+  width: auto;
+  background-color: #e6e6ff;
+}
 
 /* REGOLE MAIN */
 
+main .eyecatch {
+  /* DEBUG:  */
+  height: 200px;
+  width: 40%;
+  margin: auto;
+  background-color: #99ffcc;
+}
 
 /* REGOLE SECTION */
+
+section {
+  /* DEBUG:  */
+  height: 600px;
+  background-color: #33ff99;
+}
+
+section .row {
+  padding: 30px 0;
+  /* DEBUG:  */
+  height: 50%;
+  width: 90%;
+  margin: auto;
+  background-color: #ffffb3;
+}
+
+section .row .cell-first-row {
+  float: left;
+  margin: 1%;
+  /* DEBUG:  */
+  height: 100%;
+  width: 45%;
+  background-color: #ff704d;
+}
+
+
+section .row .cell-second-row {
+  float: left;
+  margin: 1%;
+  /* DEBUG:  */
+  height: 100%;
+  width: 25%;
+  background-color: #ff0080;
+
+}
