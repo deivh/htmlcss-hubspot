@@ -100,10 +100,11 @@ button.login {
   border: 1px solid #ff7a59;
   border-radius: 5px;
 }
-
+ .side-list li {
+  float: left;
+}
 ul li {
   list-style-type: none;
-  float: left;
 }
 
 /*  regole jumbotron */
@@ -219,11 +220,22 @@ section .row .cell-first-row-right {
 
 section .row .cell-second-row {
   float: left;
-  margin: 1%;
-  /* DEBUG:  */
+  padding: 2%;
+  margin: 1% 6%;;
   height: 100%;
-  width: calc(94% / 3);
+  width: calc(60% / 3);
+  text-align: center;
+}
+section .row .cell-second-row div , section .row .cell-second-row h3 ,section .row .cell-second-row p , section .row .cell-second-row h4 {
+  padding: 5% 0;
+}
+section .row .cell-second-row div {
+  width: 20%;
+  margin: auto;
+}
 
+section .row .cell-second-row  img {
+  width: 25%;
 }
 
 /* REGOLE SECONDA SECTION */
