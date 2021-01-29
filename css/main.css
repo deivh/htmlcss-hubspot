@@ -23,7 +23,7 @@ body {
   display: table;
   clear: both;
 }
-
+  /* regole button */
 .cta {
   background-color: #ff7a59;
   border: 1px solid white;
@@ -35,12 +35,11 @@ body {
   border-radius: 6px;
 }
 
-button {
-  padding: 8px;
-  color: white;
-  border-radius: 6px;
+.grey {
+  background-color: #f2f2f2;
+  color: #00adb5;
+  border: 1px solid grey
 }
-
 a {
   text-decoration: none;
 }
@@ -360,19 +359,30 @@ footer {
   margin-top:30px;
   padding: 2%;
   /* DEBUG:  */
-  height: 350px;
-  background-color: #ccc;
+  background-color: #33475b;
+  color: white;
+}
+footer .row ul li:first-child{
+  font-weight: bold;
+}
+
+footer .row ul li {
+  color: white;
 }
 
 footer .row {
   height: 60%;
+  width: 80%;
+  margin: auto;
 }
 
 footer .row .contacts-cell {
   float: left;
   padding: 20px;
   /* DEBUG:  */
-  height: calc(350px - 45%) ;
   width: 25%;
-  background-color: #666699;
+}
+
+footer .row .contacts-cell ul:last-of-type li:nth-child(7) {
+  margin: 20px 0 ;
 }
