@@ -11,6 +11,7 @@
 body {
   font-family: 'Oswald', sans-serif;
   font-size: 15px;
+  color: #33475b;
 }
 
 /* REGOLE RICORRENTI DI PAGINA */
@@ -27,11 +28,26 @@ body {
   border: 1px solid white;
 }
 
+.button {
+  padding: 8px;
+  color: white;
+  border-radius: 6px;
+}
 
 button {
   padding: 8px;
   color: white;
   border-radius: 6px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box {
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 10px;
 }
 
 /* REGOLE HEADER */
@@ -68,7 +84,6 @@ header nav .nav-cell {
 }
 
 header nav div a {
-  text-decoration: none;
   color: grey;
   font-weight: bold;
   padding: 0 20px 0 20px;
@@ -86,7 +101,7 @@ button.login {
   border-radius: 5px;
 }
 
-header ul li {
+ul li {
   list-style-type: none;
   float: left;
 }
@@ -114,7 +129,7 @@ header .jumbotron div {
   max-width: 50%;
   min-width: 30%;
   padding: 30px 5%;
-  color: #1f3d7a;
+  color: #33475b;
 }
 
 header .jumbotron div h1 {
@@ -132,50 +147,82 @@ header .jumbotron div button {
 }
 /* REGOLE MAIN */
 
+main {
+  background-color: #f5f8fa;
+}
+
 main .eyecatch {
-  /* DEBUG:  */
-  height: 200px;
+  padding: 1%;
   width: 40%;
   margin: auto;
-  background-color: #99ffcc;
+  color: inherit;
+  text-align: center;
+}
+
+main .eyecatch img {
+  width: 50%;
+  height: auto;
+  margin: 0 25%;
 }
 
 
 /* REGOLE SECTION */
-
+  /* prima row */
 section {
   margin-top: 20px;
-  /* DEBUG:  */
-  height: 600px;
-  background-color: #33ff99;
 }
 
 section .row {
   padding: 30px 0;
-  /* DEBUG:  */
-  height: 50%;
   width: 90%;
   margin: auto;
-  background-color: #ffffb3;
-}
 
-section .row .cell-first-row {
+}
+section .row .cell-first-row-left {
+  margin: 1% 1% 1% 20%;
   float: left;
-  margin: 1%;
-  /* DEBUG:  */
   height: 100%;
-  width: 45%;
-  background-color: #ff704d;
+  width: 20%;
+  text-align: center;
 }
 
+section .row .cell-first-row-left img {
+  width: 50%;
+  padding: 5%;
+}
+
+section .row .cell-first-row-right div, section .row .cell-first-row-right h4{
+  display: inline-block;
+  padding-right: 5%;
+}
+
+section .row .cell-first-row-right div {
+  width: 30%;
+}
+
+section .row .cell-first-row-right ul li {
+  margin: 20px 5% 0 0;
+}
+
+section .row .cell-first-row-right p, section .row .cell-first-row-right h3, section .row .cell-first-row-right h4 {
+  margin: 10px 0;
+}
+
+section .row .cell-first-row-right {
+  margin: 1% 1% 1% 1%;
+  float: left;
+  height: 100%;
+  max-width: 70%;
+}
+
+  /* seconda row */
 
 section .row .cell-second-row {
   float: left;
   margin: 1%;
   /* DEBUG:  */
   height: 100%;
-  width: 25%;
-  background-color: #ff0080;
+  width: calc(94% / 3);
 
 }
 
