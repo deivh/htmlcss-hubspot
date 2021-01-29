@@ -17,6 +17,7 @@ body {
 /* REGOLE RICORRENTI DI PAGINA */
 
 /* CLEARFIX */
+
 .row::after {
   content: '';
   display: table;
@@ -59,9 +60,11 @@ height: 891px;
 header .menu{
   height: 150px;
 }
+
 .nav-cell:last-child{
   float: right;
 }
+
 nav {
   height: 48%;
   width: auto;
@@ -70,8 +73,6 @@ nav {
 header .hor-rul {
   height: 4%;
 }
-
-
 
 header nav:first-child{
   background-color: #f2f2f2;
@@ -88,9 +89,11 @@ header nav div a {
   font-weight: bold;
   padding: 0 20px 0 20px;
 }
+
 header nav button {
   margin: 0 10px;
 }
+
 header nav:first-child div a:first-child{
   border-right: 1px solid grey;
 }
@@ -141,11 +144,13 @@ header .jumbotron div h1 {
 header .jumbotron div p {
   padding:  20px 0;
 }
+
 header .jumbotron div button {
   margin: 5px;
   padding: 22px 30px;
   border-radius: 5px;
 }
+
 /* REGOLE MAIN */
 
 main {
@@ -169,6 +174,8 @@ main .eyecatch img {
 
 /* REGOLE SECTION */
   /* prima row */
+
+
 section {
   margin-top: 20px;
 }
@@ -177,8 +184,8 @@ section .row {
   padding: 30px 0;
   width: 90%;
   margin: auto;
-
 }
+
 section .row .cell-first-row-left {
   margin: 1% 1% 1% 20%;
   float: left;
@@ -192,7 +199,7 @@ section .row .cell-first-row-left img {
   padding: 5%;
 }
 
-section .row .cell-first-row-right div, section .row .cell-first-row-right h4{
+section .row .cell-first-row-right div , section .row .cell-first-row-right h4{
   display: inline-block;
   padding-right: 5%;
 }
@@ -205,7 +212,7 @@ section .row .cell-first-row-right ul li {
   margin: 20px 5% 0 0;
 }
 
-section .row .cell-first-row-right p, section .row .cell-first-row-right h3, section .row .cell-first-row-right h4 {
+section .row .cell-first-row-right p , section .row .cell-first-row-right h3 , section .row .cell-first-row-right h4 {
   margin: 10px 0;
 }
 
@@ -226,47 +233,68 @@ section .row .cell-second-row {
   width: calc(60% / 3);
   text-align: center;
 }
-section .row .cell-second-row div , section .row .cell-second-row h3 ,section .row .cell-second-row p , section .row .cell-second-row h4 {
+
+section .row .cell-second-row div , section .row .cell-second-row h3 , section .row .cell-second-row p , section .row .cell-second-row h4 {
   padding: 5% 0;
 }
+
 section .row .cell-second-row div {
   width: 20%;
   margin: auto;
 }
 
-section .row .cell-second-row  img {
+section .row .cell-second-row img {
   width: 25%;
 }
 
 /* REGOLE SECONDA SECTION */
+
 .info-grid {
-  position: relative;
+  text-align: center;
+  background-color: #00adb5;
+  color: white;
 }
 
+.info-grid .row:first-child h2{
+  font-size: 50px;
+  padding: 10px;
+}
+
+.info-grid .row:first-child .subtitle {
+  font-size: 20px;
+  padding: 50px;
+}
 
 .info-grid .row {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% , -50%);
-  /* DEBUG:  */
+  padding: 30px;;
+  width: 80%;
+  margin: auto;
   height: 100%;
 }
 
 #container-info-grid {
   width: 90%;
   margin: auto;
-
 }
 
 .info-grid .row .cell-third-row {
+  padding: 2%;
   float: left;
-  /* DEBUG:  */
   width: 25%;
   height: 200px;
-  background-color: #40bf40;
 }
 
+.info-grid .r {
+  border-right:  1px solid white;
+}
+
+.info-grid .b {
+  border-bottom: 1px solid white;
+}
+
+.info-grid .t {
+  border-top: 1px solid white;
+}
 
 /* REGOLE TERZA ED ULTIMA SECTION */
 
