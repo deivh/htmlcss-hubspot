@@ -298,23 +298,61 @@ section .row .cell-second-row img {
 
 /* REGOLE TERZA ED ULTIMA SECTION */
 
-.row .cell-fourth-row {
+.row .cell-fourth-row-left {
   float: left;
+  margin: 1% 2% 2% 15%;
+  padding: 10px;
+  /* DEBUG:  */
+  width: 10%;
+}
+
+.row .cell-fourth-row-left h2 , .row .cell-fifth-row div h2  {
+  font-size: 50px;
+}
+
+.row .cell-fourth-row-right {
+  float: left;
+  margin: 1% 2% 2% 15%;
   padding: 10px;
   /* DEBUG:  */
   width: 50%;
-  height: 70%;
-  background-color: #668cff;
+}
+
+.row .cell-fourth-row-right img {
+  height: auto;
+  width: 22%;
+  margin: 10px;
+  vertical-align: middle;
 }
 
 .row .cell-fifth-row {
   float: left;
-  padding: 10px;
+  margin: 0 10% 0 5%;
+  padding: 1%;
   /* DEBUG:  */
-  width: 50%;
+  width: 35%;
   height: 100%;
-  background-color: #e699ff;
 }
+
+.row .cell-fifth-row div p {
+  margin: 5% 0 10% 0
+}
+
+.row .cell-fifth-row div a {
+  margin: 1%;
+  line-height: 50px;
+}
+
+.row .cell-fifth-row div p:last-of-type{
+  font-size: 12px;
+}
+
+.row .cell-fifth-row img {
+  width: 50%;
+  float: right;
+}
+
+
 
 /* REGOLE FOOTER */
 
