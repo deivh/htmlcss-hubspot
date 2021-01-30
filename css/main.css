@@ -53,11 +53,13 @@ a {
 /* REGOLE HEADER */
 
 header {
-height: 891px;
+  position: relative;
+  height: 891px;
 }
 
 header .menu{
-  height: 150px;
+  position: fixed;
+  width: 100%
 }
 
 .nav-cell:last-child{
@@ -67,6 +69,7 @@ header .menu{
 nav {
   height: 48%;
   width: auto;
+  background-color: white;
 }
 
 header .hor-rul {
@@ -108,7 +111,10 @@ button.login {
 ul li {
   list-style-type: none;
 }
-
+.blank {
+  height:150px;
+  width: 100%;
+}
 /*  regole jumbotron */
 
 header .jumbotron {
@@ -128,7 +134,7 @@ header .separèe {
 }
 
 header .jumbotron div {
-  margin: 5% 0 5% 5%;
+  margin: 0 0 5% 5%;
   max-width: 50%;
   min-width: 30%;
   padding: 30px 5%;
@@ -355,7 +361,12 @@ section .row .cell-second-row img {
 
 /* REGOLE FOOTER */
 
+footer a {
+  text-decoration: none;
+  color: white;
+}
 footer {
+  position: relative;
   margin-top:30px;
   padding: 2%;
   /* DEBUG:  */
@@ -385,4 +396,28 @@ footer .row .contacts-cell {
 
 footer .row .contacts-cell ul:last-of-type li:nth-child(7) {
   margin: 20px 0 ;
+}
+
+footer .lang-menu{
+  width: 40%;
+  margin: auto;
+  margin-bottom: 100px;
+
+}
+
+footer .lang-menu ul li {
+  float: left;
+  padding: 20px;
+}
+
+#logo-footer {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+#legal-stuff {
+  position: absolute;
+  bottom: 30px;;
+  right: 10px;
 }
