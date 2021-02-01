@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
  /* REGOLE GENERALI */
 
@@ -39,6 +38,12 @@ body {
   background-color: #f2f2f2;
   color: #00adb5;
   border: 1px solid grey
+}
+
+.login {
+  color: #ff7a59;
+  border: 1px solid #ff7a59;
+  border-radius: 5px;
 }
 
 a {
@@ -97,19 +102,11 @@ header nav div a {
   padding: 0 20px 0 20px;
 }
 
-header nav button {
-  margin: 0 10px;
-}
 
-header nav:first-child div a:first-child{
+header nav .link-border-left{
   border-right: 1px solid grey;
 }
 
-button.login {
-  color: #ff7a59;
-  border: 1px solid #ff7a59;
-  border-radius: 5px;
-}
  .side-list li {
   float: left;
 }
@@ -120,7 +117,32 @@ ul li {
   height:150px;
   width: 100%;
 }
+  /* BONUS */
+ /* regole dropdown menu */
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   top: 30px;
+   left: 20px;
+   max-width: 300px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   background-color: rgba(230, 221, 213 , 0.9);
+   z-index: 999;
+ }
+
+ .dropdown-content ul li a{
+ }
+ .dropdown-content ul li a:hover{
+   font-weight: bold;
+ }
+ .dropdown:hover .dropdown-content , .dropdown-content:hover {
+   display: block;
+ }
 /*  regole jumbotron */
 
 header .jumbotron {
@@ -129,9 +151,10 @@ header .jumbotron {
   background-size: 100%;
   background-repeat: no-repeat;
   height: calc(90% - 150px);
-
 }
-
+header .jumbotron .button.cta {
+  padding: 12px 20px;
+}
 header .separèe {
   /* DEBUG:  */
   height: 10%;
@@ -376,8 +399,38 @@ section .row .cell-second-row:last-of-type {
   float: right;
 }
 
+/* BONUS */
+/* regole fixed support chat icon */
+.help {
+  position: fixed;
+  bottom: 50px;
+  right: 80px;
+  z-index: 100;
+}
 
+.help img {
+  height: 100px;
+  width: auto;
+}
 
+.help:hover .dropdown-chat {
+  display: block;
+}
+.dropdown-chat{
+  display: none;
+  position: absolute;
+  top: -180px;
+  left: -50px;
+  width: 150px;
+  height: 200px;
+  background-color: rgba(230, 221, 213 , 0.5);
+}
+.dropdown-chat p{
+  font-size: 20px;
+  color: grey;
+  text-shadow: 1px 1px lightgrey;
+  padding: 20px;
+}
 /* REGOLE FOOTER */
 
 footer a {
@@ -396,7 +449,7 @@ footer .row ul li:first-child{
   font-weight: bold;
 }
 
-footer .row ul li {
+footer .row ul li , footer .row ul li i{
   color: white;
 }
 
@@ -424,7 +477,7 @@ footer .lang-menu{
 
 }
 
-footer .lang-menu ul li {
+footer .lang-menu ul li{
   float: left;
   padding: 20px;
 }
