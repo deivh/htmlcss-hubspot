@@ -133,16 +133,18 @@ header .jumbotron {
   padding: 20px;
   background-image: url(../img/jumbotron.png);
   background-size: 100%;
+  background-position: 0 71%;
   background-repeat: no-repeat;
   height: calc(90% - 150px);
 
 }
 
 header .separèe {
-  /* DEBUG:  */
-  height: 10%;
+  height: 100px;
   width: auto;
-  background-color: #00b38f;
+  background: rgb(123,200,176);
+  background: linear-gradient(90deg, rgba(123,200,176,1) 31%, rgba(73,170,150,1) 89%, rgba(48,155,137,1) 100%);
+
 }
 
 header .jumbotron div {
@@ -336,7 +338,6 @@ section .row .cell-second-row:last-of-type {
   float: left;
   margin: 1% 2% 2% 15%;
   padding: 10px;
-  /* DEBUG:  */
   width: 10%;
 }
 
@@ -348,7 +349,6 @@ section .row .cell-second-row:last-of-type {
   float: left;
   margin: 1% 2% 2% 15%;
   padding: 10px;
-  /* DEBUG:  */
   width: 50%;
 }
 
@@ -363,7 +363,6 @@ section .row .cell-second-row:last-of-type {
   float: left;
   margin: 0 10% 0 5%;
   padding: 1%;
-  /* DEBUG:  */
   width: 35%;
   height: 100%;
 }
@@ -398,7 +397,6 @@ footer {
   position: relative;
   margin-top:30px;
   padding: 2%;
-  /* DEBUG:  */
   background-color: #33475b;
   color: white;
 }
@@ -419,7 +417,6 @@ footer .row {
 footer .row .contacts-cell {
   float: left;
   padding: 20px;
-  /* DEBUG:  */
   width: 25%;
 }
 

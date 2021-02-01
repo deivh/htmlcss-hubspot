@@ -22,6 +22,7 @@ body {
   display: table;
   clear: both;
 }
+
   /* regole button */
 .cta {
   background-color: #ff7a59;
@@ -30,17 +31,15 @@ body {
 
 .button {
   padding: 8px;
-  color: white;
   border-radius: 6px;
 }
 
-.grey {
+.button.grey {
   background-color: #f2f2f2;
   color: #00adb5;
-  border: 1px solid grey
 }
 
-.login {
+.button.login {
   color: #ff7a59;
   border: 1px solid #ff7a59;
   border-radius: 5px;
@@ -52,13 +51,17 @@ a {
 
 .box {
   background-color: white;
-  border: 1px solid grey;
   border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.grey , .box {
+  border: 1px solid grey
 }
 
 ul li i {
   color: #fc8c03;
 }
+
 
 /* REGOLE HEADER */
 
@@ -156,10 +159,10 @@ header .jumbotron .button.cta {
   padding: 12px 20px;
 }
 header .separèe {
-  /* DEBUG:  */
   height: 10%;
   width: auto;
-  background-color: #00b38f;
+  background: rgb(123,200,176);
+  background: linear-gradient(90deg, rgba(123,200,176,1) 31%, rgba(73,170,150,1) 89%, rgba(48,155,137,1) 100%);
 }
 
 header .jumbotron div {
@@ -299,7 +302,6 @@ section .row .cell-second-row:last-of-type {
   text-align: center;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,103,12,1) 0%, rgba(49,121,34,1) 0%, rgba(8,146,19,1) 0%, rgba(25,149,85,1) 0%, rgba(21,159,111,1) 75%, rgba(48,155,137,1) 100%, rgba(123,200,176,1) 100%);
-  color: white;
 }
 
 .info-grid .row:first-child h2{
@@ -349,7 +351,6 @@ section .row .cell-second-row:last-of-type {
   float: left;
   margin: 1% 2% 2% 15%;
   padding: 10px;
-  /* DEBUG:  */
   width: 10%;
 }
 
@@ -361,13 +362,12 @@ section .row .cell-second-row:last-of-type {
   float: left;
   margin: 1% 2% 2% 15%;
   padding: 10px;
-  /* DEBUG:  */
   width: 50%;
 }
 
 .row .cell-fourth-row-right img {
   height: auto;
-  width: 22%;
+  width: 20%;
   margin: 10px;
   vertical-align: middle;
 }
@@ -376,7 +376,6 @@ section .row .cell-second-row:last-of-type {
   float: left;
   margin: 0 10% 0 5%;
   padding: 1%;
-  /* DEBUG:  */
   width: 35%;
   height: 100%;
 }
@@ -416,6 +415,7 @@ section .row .cell-second-row:last-of-type {
 .help:hover .dropdown-chat {
   display: block;
 }
+
 .dropdown-chat{
   display: none;
   position: absolute;
@@ -425,6 +425,7 @@ section .row .cell-second-row:last-of-type {
   height: 200px;
   background-color: rgba(230, 221, 213 , 0.5);
 }
+
 .dropdown-chat p{
   font-size: 20px;
   color: grey;
@@ -435,22 +436,15 @@ section .row .cell-second-row:last-of-type {
 
 footer a {
   text-decoration: none;
-  color: white;
 }
 footer {
   position: relative;
   margin-top:30px;
   padding: 2%;
-  /* DEBUG:  */
   background-color: #33475b;
-  color: white;
 }
 footer .row ul li:first-child{
   font-weight: bold;
-}
-
-footer .row ul li , footer .row ul li i{
-  color: white;
 }
 
 footer .row {
@@ -462,7 +456,6 @@ footer .row {
 footer .row .contacts-cell {
   float: left;
   padding: 20px;
-  /* DEBUG:  */
   width: 25%;
 }
 
@@ -492,4 +485,8 @@ footer .lang-menu ul li{
   position: absolute;
   bottom: 30px;;
   right: 10px;
+}
+
+footer .row ul li , footer .row ul li i , footer , footer a , .info-grid , .button {
+  color: white;
 }
