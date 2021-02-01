@@ -41,6 +41,12 @@ body {
   border: 1px solid grey
 }
 
+.login {
+  color: #ff7a59;
+  border: 1px solid #ff7a59;
+  border-radius: 5px;
+}
+
 a {
   text-decoration: none;
 }
@@ -51,7 +57,7 @@ a {
   border-radius: 10px;
 }
 
-ul li i {
+section ul li i {
   color: #fc8c03;
 }
 
@@ -160,6 +166,10 @@ header .jumbotron div button {
   margin: 5px;
   padding: 22px 30px;
   border-radius: 5px;
+}
+
+header .jumbotron .button.cta {
+  padding: 12px 20px;
 }
 
 /* REGOLE MAIN */
@@ -344,7 +354,7 @@ section .row .cell-second-row:last-of-type {
 
 .row .cell-fourth-row-right img {
   height: auto;
-  width: 22%;
+  width: 20%;
   margin: 10px;
   vertical-align: middle;
 }
@@ -396,7 +406,7 @@ footer .row ul li:first-child{
   font-weight: bold;
 }
 
-footer .row ul li {
+footer .row ul li , footer .row ul li i{
   color: white;
 }
 
