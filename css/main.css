@@ -133,7 +133,6 @@ header .jumbotron {
   padding: 20px;
   background-image: url(../img/jumbotron.png);
   background-size: 100%;
-  background-position: 0 71%;
   background-repeat: no-repeat;
   height: calc(90% - 150px);
 
