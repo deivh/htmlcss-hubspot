@@ -109,21 +109,22 @@ header nav button {
   margin: 0 10px;
 }
 
-header nav:first-child div a:first-child{
+header nav div .left-border a:first-child{
   border-right: 1px solid grey;
 }
 
-button.login {
-  color: #ff7a59;
-  border: 1px solid #ff7a59;
-  border-radius: 5px;
+header nav div .fas.fa-search {
+  color: #23b0c6;
 }
- .side-list li {
+
+.side-list li {
   float: left;
 }
+
 ul li {
   list-style-type: none;
 }
+
 .blank {
   height:150px;
   width: 100%;
@@ -154,26 +155,24 @@ header .jumbotron div {
   min-width: 30%;
   padding: 30px 5%;
   color: #33475b;
+  font-size: 20px;
 }
 
 header .jumbotron div h1 {
   font-size: 50px;
-  padding-bottom: 30px;
+  padding: 30px 30px 30px 0;
 }
 
 header .jumbotron div p {
-  padding:  20px 0;
+  padding: 20px 0 ;
+  margin: 20px 0
 }
 
-header .jumbotron div button {
-  margin: 5px;
-  padding: 22px 30px;
-  border-radius: 5px;
+header .jumbotron div a {
+  margin: 15px 0;
+  padding: 18px 30px;
 }
 
-header .jumbotron .button.cta {
-  padding: 12px 20px;
-}
 
 /* REGOLE MAIN */
 
@@ -192,7 +191,7 @@ main .eyecatch {
 main .eyecatch img {
   width: 50%;
   height: auto;
-  margin: 0 25%;
+  margin: 5% 25%;
 }
 
 
@@ -219,8 +218,12 @@ section .row .cell-first-row-left {
 }
 
 section .row .cell-first-row-left img {
-  width: 50%;
-  padding: 1%;
+  width: 80%;
+  padding: 5%;
+}
+
+section .row .cell-first-row-left a {
+  margin: 5%;
 }
 
 section .row .cell-first-row-right div , section .row .cell-first-row-right h4{
@@ -291,39 +294,42 @@ section .row .cell-second-row a {
 /* REGOLE SECONDA SECTION */
 
 .info-grid {
+  border-top: 2px solid #33475b;
+  border-bottom: 2px solid #33475b;
   text-align: center;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,103,12,1) 0%, rgba(49,121,34,1) 0%, rgba(8,146,19,1) 0%, rgba(25,149,85,1) 0%, rgba(21,159,111,1) 75%, rgba(48,155,137,1) 100%, rgba(123,200,176,1) 100%);
   color: white;
 }
 
-.info-grid .row:first-child h2{
-  font-size: 50px;
+.info-grid .titles {
+  width: 80%;
+  margin: auto;
+}
+
+.info-grid .titles h2{
+  font-size: 40px;
   padding: 10px;
 }
 
-.info-grid .row:first-child .subtitle {
+.info-grid .titles .subtitle {
   font-size: 20px;
   padding: 50px;
 }
 
 .info-grid .row {
   padding: 30px;;
-  width: 80%;
+  width: 90%;
   margin: auto;
   height: 100%;
 }
 
-#container-info-grid {
-  width: 90%;
-  margin: auto;
-}
+
 
 .info-grid .row .cell-third-row {
-  padding: 2%;
   float: left;
   width: 25%;
-  height: 200px;
+  padding: 2%
 }
 
 .info-grid .r {
@@ -344,7 +350,7 @@ section .row .cell-second-row a {
   float: left;
   margin: 1% 2% 2% 15%;
   padding: 10px;
-  width: 15%;
+  width: 17%;
 }
 
 .row .cell-fourth-row-left h2 , .row .cell-fifth-row div h2  {
@@ -353,7 +359,7 @@ section .row .cell-second-row a {
 
 .row .cell-fourth-row-right {
   float: left;
-  margin: 1% 2% 2% 15%;
+  margin: 1% 2% 2% 12%;
   padding: 10px;
   width: 50%;
 }
@@ -399,9 +405,9 @@ footer a {
   text-decoration: none;
   color: white;
 }
+
 footer {
   position: relative;
-  margin-top:30px;
   padding: 2%;
   background-color: #33475b;
   color: white;
@@ -442,6 +448,7 @@ footer .lang-menu ul li {
   float: left;
   padding: 15px;
 }
+
 
 #logo-footer {
   position: absolute;
